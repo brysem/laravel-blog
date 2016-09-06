@@ -1,0 +1,99 @@
+@import 'variables';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'resources/assets/bower/eonasdan-bootstrap-datetimepicker/src/sass/bootstrap-datetimepicker-build';
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+@import 'blog';
+
+body {
+    padding-top: 51px;
+}
+
+/* clearfix */
+.grid {
+    @include clearfix;
+}
+
+.grid-sizer,
+.grid-item {
+
+    box-sizing: border-box;
+
+    width: 33.33%;
+
+    @media (max-width: $screen-lg) {
+        width: 33.33%;
+    }
+
+    @media (max-width: $screen-md) {
+        width: 50%;
+    }
+
+    @media (max-width: ($screen-xs)) {
+      width: 50%;
+    }
+
+    @media (max-width: ($screen-xs + 75)) {
+      width: 100%;
+    }
+}
+
+.grid-item {
+  float: left;
+}
+
+.section {
+    padding: $section-padding;
+
+    h1, h2, h3, h4, h5 {
+        &:first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+}
+
+.splash {
+  background: center center no-repeat;
+  background-image: url('https://blackrockdigital.github.io/startbootstrap-clean-blog/img/home-bg.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 300px;
+  width: 100%;
+
+  color: #FFF;
+  text-align: center;
+
+  h1, h2, h3, h4 {
+      margin: 120px 0 0 0;
+  }
+
+  @media (max-width: ($screen-xs)) {
+    height: 200px;
+
+    h1, h2, h3, h4 {
+        margin: 80px 0 0 0;
+    }
+
+    h1 {
+        font-size: $font-size-h3;
+    }
+  }
+}
+
+.footer {
+    @extend .section;
+    background-color: darken($body-bg, 90%);
+    color: ligten($text-color, 100%);
+
+    a {
+        color: inherit;
+        &:hover {
+            color: #3097D1;
+        }
+    }
+}

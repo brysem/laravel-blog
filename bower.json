@@ -1,0 +1,14 @@
+{
+  "name": "waran-blog",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7",
+    "masonry": "^4.1.1",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.37",
+    "font-awesome": "^4.6.3"
+  },
+  "resolutions": {
+    "jquery": ">= 1.2.0"
+  }
+}

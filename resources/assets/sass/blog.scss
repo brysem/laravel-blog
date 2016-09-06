@@ -1,0 +1,55 @@
+.blog-post {
+    @extend .section;
+    background-color: #FFF;
+
+    img {
+        @extend .img-responsive;
+    }
+}
+
+.blog-post__heading {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 30px;
+
+    background-color: rgba(0, 0, 0, .8);
+    color: #FFF;
+
+    @media (max-width: ($screen-xs)) {
+        padding: 10px 15px;
+    }
+}
+
+.blog-author {
+    @extend .section;
+    background-color: #222;
+    color: #FFF;
+}
+
+.blog-comments {
+    @extend .section;
+    background-color: $body-bg;
+}
+
+.blog-excerpt {
+    padding: 5px 10px 10px 10px;
+    min-height: 400px;
+}
+
+.blog-excerpt__header {
+    margin: 10px 0;
+}
+
+.blog-excerpt__text {
+    display: block;
+}
+
+.blog-excerpt__image {
+    display: block;
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('http://placehold.it/900x300');
+}
